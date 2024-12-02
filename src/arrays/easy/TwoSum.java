@@ -1,3 +1,5 @@
+// https://leetcode.com/problems/two-sum/description/
+
 package arrays.easy;
 
 import java.util.HashMap;
