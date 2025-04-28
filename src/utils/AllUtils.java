@@ -33,6 +33,7 @@ public class AllUtils {
 
     public static int[][] to2DArray(String input) {
         // Remove outer brackets
+        input = input.replace(" ","");
         input = input.substring(1, input.length() - 1);
 
         // Split rows
@@ -44,7 +45,7 @@ public class AllUtils {
             String[] numbers = row.split(",");
             result[i] = new int[numbers.length];
             for (int j = 0; j < numbers.length; j++) {
-                result[i][j] = Integer.parseInt(numbers[j]);
+                result[i][j] = Integer.parseInt(numbers[j].trim());
             }
         }
         return result;
